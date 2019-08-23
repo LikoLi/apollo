@@ -1,0 +1,10 @@
+stages:
+    - build
+    - test
+    - deploy
+
+deploy_maven_snapshot:
+    stage: deploy
+    script: mvn clean package
+    only:
+        - master
