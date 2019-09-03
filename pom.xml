@@ -59,12 +59,12 @@
         <repository>
             <id>releases</id>
             <name>releases</name>
-            <url>http://nexus.ngrok.likoli.cn:81/repository/maven-releases/</url>
+            <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>snapshots</name>
-            <url>http://nexus.ngrok.likoli.cn:81/repository/maven-snapshots/</url>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
