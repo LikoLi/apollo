@@ -10,12 +10,13 @@
     </parent>
     <groupId>org.liko.study</groupId>
     <artifactId>apollo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${apollo.version}</version>
     <name>apollo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <apollo.version>0.0.1-SNAPSHOT</apollo.version>
     </properties>
 
     <repositories>

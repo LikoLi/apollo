@@ -5,6 +5,15 @@ stages:
 
 deploy_maven_snapshot:
     stage: deploy
-    script: mvn clean package -DskipTests
+    script: 
+        - mvn clean deploy -DskipTests
     only:
         - master
+        - /^\d+\.\d+$/
+
+deploy_maven_release:
+    stage: deploy
+    script:
+        - sed -i "s/\${apollo\.version}/$CI_BUILD_REF_NAME/g" pom.xml && mvn deploy -Dims.version=$CI_BUILD_REF_NAME
+    only:
+        - tags
