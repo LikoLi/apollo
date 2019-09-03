@@ -14,6 +14,6 @@ deploy_maven_snapshot:
 deploy_maven_release:
     stage: deploy
     script:
-        - sed -i "s/\${apollo\.version}/$CI_BUILD_REF_NAME/g" pom.xml && mvn deploy -Dims.version=$CI_BUILD_REF_NAME
+        - sed -i "s/\${apollo\.version}/$CI_BUILD_REF_NAME/g" pom.xml && mvn deploy -Dims.version=$CI_BUILD_REF_NAME -DskipTests
     only:
         - tags
