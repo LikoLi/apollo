@@ -30,15 +30,15 @@
     </repositories>
 
     <pluginRepositories>
-	<pluginRepository>
-		<id>spring-snapshots</id>
-		<url>https://repo.spring.io/snapshot</url>
-	</pluginRepository>
-	<pluginRepository>
-		<id>spring-milestones</id>
-		<url>https://repo.spring.io/milestone</url>
-	</pluginRepository>
-</pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>https://repo.spring.io/snapshot</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
